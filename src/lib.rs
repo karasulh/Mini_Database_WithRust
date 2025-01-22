@@ -10,7 +10,7 @@ use std::{fs::{read_dir, remove_file, File, OpenOptions}, io::{self, BufReader, 
 //TODO: When MemTable reaches to max capacity, it writes its entries to SSTable.
 //TODO: When SSTable also reaches to max capacity, do compaction and delete the key-value WALEntry which has false tombstone. 
 //TODO: DB GET,SET,DELETE commands should be applied to SSTable entries if MemTable doesnot include the mentioned key.
-
+//TODO: Divide this lib to modules to organize well
 
 
 pub struct SSTable{
